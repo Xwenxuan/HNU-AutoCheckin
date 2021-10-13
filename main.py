@@ -86,12 +86,11 @@ class Checker(httpx.Client):
                             'RealAddress': self.configs['address'][3],
                             'BackState': 1,
                             "IsUnusual": 0,
-# 		            "UnusualInfo": "",
 		            "IsTouch": 0,
                             "IsViaHuBei": 0,
 		            "IsViaWuHan": 0,
                             "IsNormalTemperature": 1,
-                            "QRCodeColor": "绿色",
+#                             "QRCodeColor": "绿色",
 #                             'MorningTemp': f'36.{randint(*interval)}',
 #                             'NightTemp': f'36.{randint(*interval)}',
                             'tripinfolist': []
