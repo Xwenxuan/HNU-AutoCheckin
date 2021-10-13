@@ -79,21 +79,15 @@ class Checker(httpx.Client):
                         },
                         json={
                             'Longitude': None,
-                            'Latitude': None,
-                            'RealProvince': self.configs['address'][0],
-                            'RealCity': self.configs['address'][1],
-                            'RealCounty': self.configs['address'][2],
-                            'RealAddress': self.configs['address'][3],
-                            'BackState': 1,
-                            "IsUnusual": 0,
-		            "IsTouch": 0,
-                            "IsViaHuBei": 0,
-		            "IsViaWuHan": 0,
-                            "IsNormalTemperature": 1,
-#                             "QRCodeColor": "绿色",
-#                             'MorningTemp': f'36.{randint(*interval)}',
-#                             'NightTemp': f'36.{randint(*interval)}',
-                            'tripinfolist': []
+                        'Latitude': None,
+                        'RealProvince': self.configs['address'][0],
+                        'RealCity': self.configs['address'][1],
+                        'RealCounty': self.configs['address'][2],
+                        'RealAddress': self.configs['address'][3],
+                        'BackState': 1,
+                        'MorningTemp': f'36.{randint(*interval)}',
+                        'NightTemp': f'36.{randint(*interval)}',
+                        'tripinfolist': []
                         }
                     ).json()['msg']
                     if message in self.configs['success_tint']:
